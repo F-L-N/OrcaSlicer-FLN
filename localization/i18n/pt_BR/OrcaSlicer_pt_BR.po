@@ -16982,6 +16982,12 @@ msgstr "Distância XY entre suporte e objeto"
 msgid "This controls the XY separation between an object and its support."
 msgstr "Isso controla a separação XY entre um objeto e seu suporte."
 
+msgid "Minimum tree support XY distance"
+msgstr "Distância X/Y mínima do suporte em árvore"
+
+msgid "Minimum X/Y separation between tree support and the object.\nSet to 0 to use the original OrcaSlicer automatic calculation."
+msgstr "Define a separação mínima em X/Y entre o suporte em árvore e o objeto.\nUse 0 para utilizar o cálculo automático original do OrcaSlicer."
+
 msgid "Support/object first layer gap"
 msgstr "Vão na primeira camada entre suporte e objeto"
 

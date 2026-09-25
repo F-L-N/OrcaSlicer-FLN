@@ -6824,6 +6824,16 @@ void PrintConfigDef::init_fff_params()
     //Support with too small spacing may touch the object and difficult to remove.
     def->set_default_value(new ConfigOptionFloat(0.35));
 
+    def = this->add("tree_support_min_xy_distance", coFloat);
+    def->label = L("Minimum tree support XY distance");
+    def->category = L("Support");
+    def->tooltip = L("Minimum X/Y separation between tree support and the object.\nSet to 0 to use the original OrcaSlicer automatic calculation.");
+    def->sidetext = L("mm");
+    def->min = 0;
+    def->max = 10;
+    def->mode = comAdvanced;
+    def->set_default_value(new ConfigOptionFloat(0.0));
+
     def = this->add("support_object_first_layer_gap", coFloat);
     def->label = L("Support/object first layer gap");
     def->category = L("Support");
