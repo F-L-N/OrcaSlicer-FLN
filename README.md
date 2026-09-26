@@ -1,3 +1,21 @@
+OrcaSlicer-FLN
+
+Baseado no OrcaSlicer 2.5.0
+
+Alteração:
+- Novo controle "Minimum tree support XY distance"
+- 0 mm = comportamento automático original do OrcaSlicer
+- Valores > 0 = distância XY mínima manual para suportes em árvore/orgânicos
+
+Build:
+Windows x64
+
+Branch:
+FLN-Micro-Precision
+
+Release:
+2.5.0-FLN
+
 <div align="center">
 
 <picture>
