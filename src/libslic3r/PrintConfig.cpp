@@ -7254,7 +7254,7 @@ void PrintConfigDef::init_fff_params()
     def->category = L("Support");
     def->tooltip  = L("This setting determines the initial diameter of support nodes.");
     def->sidetext = L("mm");	// millimeters, CIS languages need translation
-    def->min      = 1.0;
+    def->min      = 0.6;
     def->max      = 10;
     def->mode     = comAdvanced;
     def->set_default_value(new ConfigOptionFloat(5.));
@@ -7278,7 +7278,7 @@ void PrintConfigDef::init_fff_params()
     def->category = L("Support");
     def->tooltip  = L("This setting determines the initial diameter of support nodes.");
     def->sidetext = L("mm");	// millimeters, CIS languages need translation
-    def->min      = 1.0;
+    def->min      = 0.6;
     def->max      = 10;
     def->mode     = comAdvanced;
     def->set_default_value(new ConfigOptionFloat(2.));
