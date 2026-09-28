@@ -14,7 +14,7 @@ html, body {
     margin: 0px;
     padding: 0px;
 	line-height: 20px;
-    font-size: 16px;	
+    font-size: 16px;
 }
 
 .ZScrol::-webkit-scrollbar {/*滚动条整体样式*/
@@ -47,7 +47,7 @@ html, body {
 .LinkBtn
 {
 	font-size:12px;
-	color: #00ffea;	
+	color: #00ffea;
 	cursor: pointer;
 }
 
@@ -83,9 +83,15 @@ body
 /*----These shadow similar tokens in global.css on purpose: global.css themes on the OS
       via prefers-color-scheme, while this page themes on the dark.css link that
       SwitchDarkMode() injects from the app theme, so the two can disagree.----*/
+/*----FLN Home light theme----*/
 :root
 {
-	--row-hover            : #BFE1DE;
+	--main-color           : #7C3AED;
+	--main-color-hover     : #8B5CF6;
+	--main-color-fixed     : #7C3AED;
+	--row-hover            : #EDE9FE;
+	--focus-bg-item        : #EDE9FE;
+	--focus-bg-box         : #F5F3FF;
 	--warn-color           : #F07E4A;
 	--account-avatar-bg    : #E6EBEA;
 	--account-avatar-glyph : #9AA5A3;
@@ -94,7 +100,7 @@ body
 	--account-meta         : #7C8282;
 	--account-border       : #DBDBDB;
 	--account-divider      : #E2E4E4;
-	--account-action       : #00796B;
+	--account-action       : #7C3AED;
 	--account-danger       : #D33B3B;
 	--account-danger-bg    : rgba(211, 59, 59, 0.10);
 	--account-warn-bg      : rgba(240, 126, 74, 0.12);  /*----var(--warn-color) at 12%----*/
@@ -468,13 +474,13 @@ body
 /*------------------*/
 #BtnArea
 {
-	
+
 }
 
 
 .BtnItem
 {
-    padding-left:40px;	
+    padding-left:40px;
 	height:50px;
 	line-height: 50px;
 	display: flex;
@@ -590,8 +596,8 @@ body
 
 .MenuItem:hover
 {
-	border-color: #009688;		/*ORCA color*/
-	background-color: #E5F0EE; /*ORCA color with %25 opacity*/
+	border-color: var(--main-color);
+	background-color: var(--focus-bg-box);
 }
 
 .MenuIcon
@@ -635,7 +641,7 @@ body
 {
 	display:flex;
 	align-items: center;
-	padding: 6px 0px;	
+	padding: 6px 0px;
 }
 
 #HotModel_RIGHT_Title
@@ -676,7 +682,7 @@ body
 
 #RecentTitle
 {
-	
+
 }
 
 #FileList
@@ -717,7 +723,7 @@ body
 	border-radius: 8px;
 	width: 184px;
 	height: 184px;
-	position: relative;	
+	position: relative;
 }
 
 .FileItem img
@@ -747,7 +753,7 @@ body
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    word-break: break-all;	
+    word-break: break-all;
 }
 
 .FileNamePack
@@ -774,7 +780,7 @@ body
 	font-size: 10px;
 	font-weight: 600;
 	color: #FFFFFF;
-	background-color: #009688;
+	background-color: var(--main-color);
 	border-radius: 2px;
 	white-space: nowrap;
 }
@@ -811,7 +817,7 @@ body
 .CT_Item:hover
 {
 	cursor: pointer;
-	background-color:#009688; /*ORCA color*/
+	background-color: var(--main-color);
 	border-radius: 4px;
 	color: #fff;
 }
@@ -821,35 +827,35 @@ body
 {
 	margin-right: 6px;
 	width: 16px;
-	height: 16px;	
+	height: 16px;
 }
 
 #CT_Delete_Bar:hover  .CT_Delete
 {
 	background: url("../img/remove2.svg");
 	background-repeat: no-repeat;
-	background-size: contain;	
+	background-size: contain;
 }
 
 .CT_Delete
 {
 	background: url("../img/remove.svg");
 	background-repeat: no-repeat;
-	background-size: contain;	
+	background-size: contain;
 }
 
 #CT_Folder_Bar:hover .CT_Explore
 {
 	background: url("../img/open_folder2.svg");
 	background-repeat: no-repeat;
-	background-size: contain;	
+	background-size: contain;
 }
 
 .CT_Explore
 {
 	background: url("../img/open_folder.svg");
 	background-repeat: no-repeat;
-	background-size: contain;		
+	background-size: contain;
 }
 
 
@@ -861,7 +867,7 @@ body
 .CT_Text
 {
 	line-height: 20px;
-	height: 20px;	
+	height: 20px;
 	display: block;
 }
 
@@ -944,7 +950,7 @@ body
 @media screen and ( min-width:1681px) and (max-width:2120px ) {
 .GuideBlock
 {
-    width: calc(25% - 20px);	
+    width: calc(25% - 20px);
 	margin: 0px 10px 40px 10px;
 	cursor: pointer;
 }
@@ -982,7 +988,7 @@ body
 
 .UG_IMG
 {
-	width: 100%;	
+	width: 100%;
 }
 
 .UG_IMG img
@@ -1025,7 +1031,7 @@ body
 	display:flex;
 	align-items: center;
 	height: 28px;
-	padding: 0px 8px;	
+	padding: 0px 8px;
 }
 
 .HotModel_Designer_Info img
@@ -1046,8 +1052,8 @@ body
 
 #HotModel_RIGHT_Title:hover
 {
-	cursor: pointer;	
-	color:#009688;	
+	cursor: pointer;
+	color: var(--main-color);
 }
 
 .HotModelPiece
